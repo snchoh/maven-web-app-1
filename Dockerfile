@@ -1,7 +1,7 @@
 FROM maven
 # Dummy text to test 
 RUN mvn --version
-COPY *./ ./
+COPY ./ ./
 RUN mvn validate
 RUN ls
 RUN package
